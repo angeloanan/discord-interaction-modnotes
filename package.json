@@ -1,0 +1,44 @@
+{
+  "name": "discord-modnotes",
+  "version": "0.1.0",
+  "description": "Discord Interaction implementation for Mod Notes",
+  "main": "dist/worker.js",
+  "scripts": {
+    "build": "webpack",
+    "format": "prettier --write '*.{json,js}' 'src/**/*.{js,ts}'",
+    "lint": "eslint --max-warnings=0 src && prettier --check '*.{json,js}' 'src/**/*.{js,ts}'",
+    "test": "jest --config jestconfig.json --verbose"
+  },
+  "author": "Christopher Angelo <angelo@angeloanan.xyz>",
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "typescript",
+      "prettier"
+    ]
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.3.1",
+    "@types/common-tags": "^1.8.1",
+    "@types/jest": "^26.0.23",
+    "@types/service-worker-mock": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "discord-api-types": "^0.26.1",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-typescript": "^3.0.0",
+    "jest": "^27.0.1",
+    "prettier": "^2.3.0",
+    "service-worker-mock": "^2.0.5",
+    "ts-jest": "^27.0.1",
+    "ts-loader": "^9.2.2",
+    "typescript": "^4.3.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "common-tags": "^1.8.2"
+  }
+}

@@ -1,0 +1,21 @@
+name = "modnotes"
+type = "javascript"
+zone_id = ""
+account_id = ""
+route = ""
+workers_dev = true
+compatibility_date = "2022-01-26"
+kv_namespaces = [ 
+  { binding = "NOTES", id = "840380dc3b5943e6b7f6eef43e7b16aa", preview_id = "88bb4e0579164c48920349eb7c94a2a7" }
+]
+
+[build]
+command = "yarn install && yarn format && yarn lint && yarn build"
+[build.upload]
+format = "service-worker"
+
+[vars]
+DISCORD_INTERACTION_PUBLIC_KEY = "a6f566c400b9914a161d603dd44976242767ccefd11ba67470ba5ee586830a50"
+
+# [secrets]
+# DISCORD_BOT_TOKEN
